@@ -63,6 +63,7 @@ transition: slide-left
    - a value (data)
    - a reference (pointer) to the next node
 - Q: Does inserting a new element in our list solve the problem we originally had with contiguous memory
+- Q: How might you delete, traverse (loop through and print nodes), or search now?
 
 
 
