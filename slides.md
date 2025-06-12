@@ -401,6 +401,22 @@ transition: slide-left
 
 # Dictionaries
 
+- What is a dictionary?
+   - A data structure that stores key-value pairs (like a JS object)
+   - Keys are unique identifiers for values
+   - Values hold associated ata
+   - Similar to a real-world dictionary where you look up a word (key) to find its definition (value)
+- example in JS:
+```js
+const dictionary = {
+  'apple': 'A fruit that is red or green',
+  'banana': 'A long yellow fruit',
+  'carrot': 'An orange vegetable'
+};
+console.log(dictionary['apple']); // Output: A fruit that is red or green
+console.log(dictionary.banana); // Output: A long yellow fruit
+```
+
 
 ---
 layout: image-right
