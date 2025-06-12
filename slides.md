@@ -92,6 +92,23 @@ Can we solve the problem of copying an entire array to a new location in memory 
 transition: slide-left
 ---
 
+# Arrays vs Linked Lists
+
+| Feature                       | **Array**                                         | **Linked List**                                   |
+| ----------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| **Memory Layout**             | Contiguous memory                                 | Non-contiguous memory                             |
+| **Access Time**               | Fast, `O(1)` random access via index              | Slow, `O(n)` traversal needed                     |
+| **Insertion (middle)**        | Slow, `O(n)` (elements need shifting)             | Fast, `O(1)` if node is known                     |
+| **Deletion (middle)**         | Slow, `O(n)` (elements need shifting)             | Fast, `O(1)` if node is known                     |
+| **Memory Overhead**           | Low (just data)                                   | High (extra pointer per node)                     |
+| **Implementation Simplicity** | Simpler                                           | More complex (especially for doubly linked lists) |
+| **Use Case Suitability**      | Best for random access and known-size collections | Best for frequent insertions/deletions            |
+
+
+---
+transition: slide-left
+---
+
 # Dynamically Allocating Memory in C
 
 ---
