@@ -777,6 +777,8 @@ transition: slide-left
    - ex: `sum(5) // should output 15`
 3. Write a function that computes the nth Fibonacci number (1, 1, 2, 3, 5, 8, ...)
    - ex: `fibonacci(5) // should output 5`
+4. Write a function that reverses a string
+   - ex: `reverse("hello") // should output "olleh"`
 
 
 
