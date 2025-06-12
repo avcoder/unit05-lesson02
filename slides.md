@@ -709,7 +709,7 @@ class: text-left
 🍦 Cool Tips, Trends and Resources:
 - 🖇️ [Linked Lists](https://www.geeksforgeeks.org/linked-list-data-structure/)
 - 👩‍💻 [NeetCode](https://www.freecodecamp.org/news/prepare-for-technical-interviews-using-neetcode-150)
-- [Recursion](https://dev.to/codeguppy/recursion-in-javascript-practical-exercises-41hg)
+- ➿ [Recursion](https://dev.to/codeguppy/recursion-in-javascript-practical-exercises-41hg)
 
 <br>
 <hr>
@@ -762,6 +762,22 @@ transition: slide-left
 # Iterative vs Recursive
 
 <img src="/assets/recursion.png" width="700"/>
+
+---
+transition: slide-left
+---
+
+# Exercises: Recursion
+
+1.  Write a function that computes: `power(n, x) → n^x`
+   - ex: `power(2, 3) // should output 8`
+1. Calculate the sum of natural number up to n
+   - ex: `sum(5) // should output 15`
+1. Write a function that computes the nth Fibonacci number (1, 1, 2, 3, 5, 8, ...)
+   - ex: `fibonacci(5) // should output 5`
+
+
+
 
 ---
 transition: slide-left
