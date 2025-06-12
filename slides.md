@@ -254,7 +254,7 @@ main();
 transition: slide-left
 ---
 
-# btw, Insight Aha moment
+# btw, Insight Aha moment in JS
 
 ```js
 2 === 2 // true
