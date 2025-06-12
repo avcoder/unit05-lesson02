@@ -254,6 +254,31 @@ main();
 transition: slide-left
 ---
 
+# btw, Insight Aha moment
+
+```js
+2 === 2 // true
+'a' === 'a' // true
+true === true // true
+
+// Why are the below false?
+[] === [] // false
+{} === {} // false
+
+const a = [];
+const b = [];
+console.log(a === b); // false
+
+const obj1 = {};
+const obj2 = {};
+console.log(obj1 === obj2); // false
+```
+
+
+---
+transition: slide-left
+---
+
 # Dictionaries
 
 
