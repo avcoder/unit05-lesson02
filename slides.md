@@ -399,6 +399,21 @@ console.log(list.contains(40));  // Output: false
 transition: slide-left
 ---
 
+# Summary
+
+- Arrays can give us contiguous memory allocation, but they have limitations when it comes to resizing and inserting/deleting elements.
+- Linked Lists allow us to dynamically allocate memory and connect nodes, making it easier to insert and delete elements without needing to copy the entire structure, but they have slower access times and more memory overhead.
+- Can we get the best of both worlds?
+- So far, we've been dealing with one-dimensional data structures.
+- What if we need to store more complex data, like a collection of items with unique identifiers, or a mapping of keys to values?
+- What if we need to access elements by a unique key rather than an index?
+
+
+
+---
+transition: slide-left
+---
+
 # Dictionaries
 
 - What is a dictionary?
@@ -416,6 +431,19 @@ const dictionary = {
 console.log(dictionary['apple']); // Output: A fruit that is red or green
 console.log(dictionary.banana); // Output: A long yellow fruit
 ```
+
+---
+transition: slide-left  
+---
+
+# How is a Dictionary Formed in Memory?
+
+- Internally uses hash tables or arrays 
+- Keys are converted to hash codes (unique numerical representations OR index)
+- Values are stored at the index corresponding to the hash code
+- Handles collisions (when two keys hash to the same index) using techniques like chaining or open addressing
+
+<img src="/assets/dict.png" width="300px" style="background-color: #fff; display: block; margin: 0 auto">
 
 
 ---
