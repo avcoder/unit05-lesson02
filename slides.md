@@ -709,6 +709,7 @@ class: text-left
 🍦 Cool Tips, Trends and Resources:
 - 🖇️ [Linked Lists](https://www.geeksforgeeks.org/linked-list-data-structure/)
 - 👩‍💻 [NeetCode](https://www.freecodecamp.org/news/prepare-for-technical-interviews-using-neetcode-150)
+- [Recursion](https://dev.to/codeguppy/recursion-in-javascript-practical-exercises-41hg)
 
 <br>
 <hr>
