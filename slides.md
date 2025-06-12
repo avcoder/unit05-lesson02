@@ -729,13 +729,15 @@ transition: slide-left
 - Example: Demo Factorial function in [Loupe](http://latentflip.com/loupe/)
    - `n! = n × (n - 1)!`
 
-```js
-function factorial(n) {
-  if (n === 0 || n === 1) return 1; // Base case
-  return n * factorial(n - 1); // Recursive call
-}
-console.log(factorial(3)); // Output: 120
-``` 
+<img src="/assets/recursion2.png" width="400" style="display: block; margin: 0 auto"/>
+
+<!-->
+- function factorial(n) {
+- if (n === 0 || n === 1) return 1; // Base case
+- return n * factorial(n - 1); // Recursive call
+- }
+- console.log(factorial(3)); // Output: 120
+-->
 
 ---
 transition: slide-left
@@ -775,6 +777,7 @@ transition: slide-left
    - ex: `sum(5) // should output 15`
 3. Write a function that computes the nth Fibonacci number (1, 1, 2, 3, 5, 8, ...)
    - ex: `fibonacci(5) // should output 5`
+
 
 
 
