@@ -723,6 +723,25 @@ transition: slide-left
 
 # Recursion
 
+- A function that calls itself to solve a problem by breaking it down into smaller subproblems
+- Each call brings us closer to a base case, which is a condition that stops the recursion
+- Example: Demo Factorial function in [Loupe](http://latentflip.com/loupe/)
+   - `n! = n × (n - 1)!`
+
+```js
+function factorial(n) {
+  if (n === 0 || n === 1) return 1; // Base case
+  return n * factorial(n - 1); // Recursive call
+}
+console.log(factorial(3)); // Output: 120
+``` 
+
+---
+transition: slide-left
+---
+
+# Why Recursion?
+
 ---
 transition: slide-left
 ---
