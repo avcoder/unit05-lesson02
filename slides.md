@@ -272,6 +272,14 @@ console.log(a === b); // false
 const obj1 = {};
 const obj2 = {};
 console.log(obj1 === obj2); // false
+
+const c = []
+c.push(1); allowed
+c = [2] // Error: Assignment to constant variable
+
+const d = {};
+d.name = 'John'; // allowed
+d = { name: 'John' }; // Error: Assignment to constant variable
 ```
 
 
