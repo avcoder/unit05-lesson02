@@ -163,9 +163,9 @@ layout: center
 transition: slide-left
 ---
 
-# Which Data Structures could be implemented using Linked Lists?  (ex: nodes that point to another node)
+# Which DS could be implemented using Linked Lists?
 
-<img src="/assets/ds1.gif" width="300px" style="display: inline-block">
+<img src="/assets/ds1.gif" width="400px" style="display: inline-block">
 
 ---
 transition: slide-left
