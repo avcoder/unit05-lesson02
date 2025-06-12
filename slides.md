@@ -484,15 +484,12 @@ The hash codes are used purely for efficient lookup behind the scenes.
 transition: slide-left
 ---
 
-# Hashing Tables
-
-- If I threw a deck of cards on the floor and asked you to pick to sort all 52 cards, how would you do it?
-  - ex: put all spades in one bucket, all hearts in another etc.
-  - Buckets: 
-     - put an input into a location, makes problem smaller and easier to solve.  
-     - takes a very large domain of inputs and maps it to a smaller range of values
+# Hashing   
+Hashing is the process of converting an input (or 'key') into a fixed-size string of bytes.
 
 <img src="/assets/hash.png" style="display: block; margin: 0 auto" />
+
+- Analogy: placing 52 playing cards by their suit -- into 4 boxes.
 
 ---
 transition: slide-left  
