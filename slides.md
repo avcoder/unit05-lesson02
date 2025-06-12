@@ -492,6 +492,20 @@ Hashing is the process of converting an input (or 'key') into a fixed-size strin
 - Analogy: placing 52 playing cards by their suit -- into 4 boxes.
 
 ---
+transition: slide-left
+---
+
+# Hash Tables
+A combination of an array and a linked list
+
+- Each index in the array is a bucket that can hold multiple key-value pairs (in case of collisions)
+- Each bucket can be implemented as a linked list or another data structure to handle collisions
+
+<img src="/assets/hashtable.svg" style="background-color: #fff; display: block; margin: 0 auto" />
+
+- Potential issue = Collisions: when two keys hash to the same index
+
+---
 transition: slide-left  
 ---
 
