@@ -432,6 +432,8 @@ console.log(dictionary['apple']); // Output: A fruit that is red or green
 console.log(dictionary.banana); // Output: A long yellow fruit
 ```
 
+- Operations on Dictionaries include: Insert, Search, Delete, Update
+
 ---
 transition: slide-left  
 ---
