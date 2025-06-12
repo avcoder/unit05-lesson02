@@ -224,7 +224,31 @@ int main(void) {
 transition: slide-left
 ---
 
-# Dynamically Allocating Memory in JS
+# Equivalent in JS
+JS doesn't have memory allocation like malloc/free.  Rather arrays are dynamic and managed automatically
+
+```js
+function main() {
+    const list = [1, 2, 3];  // Static array equivalent
+    const list2 = new Array(4); // Dynamic array with extra space - just create a new array
+
+    // Copy first 3 elements from list to list2
+    for (let i = 0; i < 3; i++) {
+        list2[i] = list[i];
+    }
+
+    // Add new element
+    list2[3] = 4;
+
+    // Print values with their indices (JS has no direct access to memory addresses)
+    for (let i = 0; i < 4; i++) {
+        console.log(`Value: ${list2[i]}, Index: ${i}`);
+    }
+    // No need to free memory in JS, garbage collector handles it
+}
+
+main();
+```
 
 ---
 transition: slide-left
