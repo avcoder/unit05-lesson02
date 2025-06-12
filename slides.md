@@ -69,10 +69,17 @@ transition: slide-left
 ---
 
 # Recap (pg.2)
-
-- Q: What is Big O notation?
 - Q: How is an array arranged in memory?
-- Q: How might regular characters (ex: "hello") be arranged in memory?
+
+<img src="/assets/memory.jpg" width="500px">
+
+---
+transition: slide-left
+---
+
+# Recap (pg.3)
+
+- Q: What is [Big O notation](https://www.bigocheatsheet.com/)?
 - Q: What's the Big O notation for accessing an element in the array?
 - Q: What's the Big O notation for inserting a new element?
 - Q: What's the Big O notation for deleting a new element?
@@ -130,8 +137,7 @@ transition: slide-left
 | ----------------------------- | ------------------------------------------------- | ------------------------------------------------- |
 | **Memory Layout**             | Contiguous memory                                 | Non-contiguous memory                             |
 | **Access Time**               | Fast, `O(1)` random access via index              | Slow, `O(n)` traversal needed                     |
-| **Insertion (middle)**        | Slow, `O(n)` (elements need shifting)             | Fast, `O(1)` if node is known                     |
-| **Deletion (middle)**         | Slow, `O(n)` (elements need shifting)             | Fast, `O(1)` if node is known                     |
+| **Insertion/Deletion (middle)**        | Slow, `O(n)` (elements need shifting)             | Fast, `O(1)` if node is known                     |
 | **Memory Overhead**           | Low (just data)                                   | High (extra pointer per node)                     |
 | **Implementation Simplicity** | Simpler                                           | More complex (especially for doubly linked lists) |
 | **Use Case Suitability**      | Best for random access and known-size collections | Best for frequent insertions/deletions            |
