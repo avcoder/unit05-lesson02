@@ -805,4 +805,5 @@ transition: slide-left
 # Homework
 
 - Work on your "Note-taking" midterm app due June 15 midnight EST
+   - can submit before due date if you wish
 - Recursion exercises: https://leetcode.com/problem-list/recursion/
