@@ -282,6 +282,118 @@ d.name = 'John'; // allowed
 d = { name: 'John' }; // Error: Assignment to constant variable
 ```
 
+---
+transition: slide-left
+---
+
+# Linked Lists in JS (pg.1)
+
+```
+// pseudo-code
+CLASS Node
+    PROPERTY value
+    PROPERTY next
+
+    FUNCTION constructor(val)
+        SET value TO val
+        SET next TO null
+    END FUNCTION
+END CLASS
+```
+```js
+// in JS
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+```
+
+---
+transition: slide-left
+---
+
+# Linked Lists in JS (pg.2)
+
+```js
+class LinkedList {
+  constructor() {
+    this.head = null; // Pointer to the first node; SET it to NULL initially
+    this.size = 0; // Number of nodes in the list; SET it to 0 initially
+  }
+
+  // Insert new node at the end
+  append(value) {
+    const newNode = new Node(value);
+
+    if (!this.head) { // IF head IS null, it means the list is empty
+      this.head = newNode; // Set head to the new node
+    } else {
+      let current = this.head; // Start from the head
+      while (current.next) { // Traverse to the last node
+        current = current.next; 
+      }
+      current.next = newNode; // Set the next of the last node to the new node
+    }
+
+    this.size++; // Increment the size of the list
+  }
+```
+
+---
+transition: slide-left
+---
+
+# Linked Lists in JS (pg.3)
+
+```js
+  // Print list values
+  print() {
+    let current = this.head;
+    let result = '';
+
+    while (current) {
+      result += current.value + ' -> ';
+      current = current.next;
+    }
+    result += 'null';
+    console.log(result);
+  }
+
+  // Search for a value (returns true/false)
+  contains(value) {
+    let current = this.head;
+
+    while (current) {
+      if (current.value === value) return true;
+      current = current.next;
+    }
+
+    return false;
+  }
+}
+```
+
+---
+transition: slide-left
+---
+
+# Linked Lists in JS (pg.4)
+Usage 
+
+```js
+const list = new LinkedList();
+
+list.append(10);
+list.append(20);
+list.append(30);
+
+list.print();             // Output: 10 -> 20 -> 30 -> null
+console.log(list.contains(20));  // Output: true
+console.log(list.contains(40));  // Output: false
+
+```
 
 ---
 transition: slide-left
