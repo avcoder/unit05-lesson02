@@ -726,8 +726,7 @@ transition: slide-left
 
 - A function that calls itself to solve a problem by breaking it down into smaller subproblems
 - Each call brings us closer to a base case, which is a condition that stops the recursion
-- Example: Demo Factorial function in [Loupe](http://latentflip.com/loupe/)
-   - `n! = n × (n - 1)!`
+- Example: Demo Factorial function in [Loupe](http://latentflip.com/loupe/) (Note: functions are paused in call stack until the base case is reached)
 
 <img src="/assets/recursion2.png" width="400" style="display: block; margin: 0 auto"/>
 
@@ -745,9 +744,10 @@ transition: slide-left
 
 # Why Recursion?
 
-- Reduces complex problems into simpler ones
+- Reduces complex problems into simpler, more elegant ones
 - Helps solve naturally recursive problems (like tree traversal, backtracking, divide-and-conquer)
 - Often cleaner and more elegant than loops
+- Expected Computer Science knowledge (especially for interviews)
 - Every recursive function must have:
 
 | Part           | Purpose                             |
