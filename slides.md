@@ -544,6 +544,159 @@ class Dictionary {
 ```
 
 ---
+transition: slide-left  
+---
+
+# Hash Table / Dictionaries in JS (pg.1)
+Usage:
+
+```js
+const dict = new HashTable();
+
+dict.set("name", "Alice");
+dict.set("age", 30);
+dict.set("job", "Engineer");
+
+console.log(dict.get("name"));  // Alice
+console.log(dict.get("age"));   // 30
+
+dict.set("age", 31);            // Update value
+console.log(dict.get("age"));   // 31
+
+dict.remove("job");
+console.log(dict.get("job"));   // undefined
+
+dict.print();                   // See bucket contents
+```
+
+---
+transition: slide-left  
+---
+
+# Hash Table / Dictionaries in JS (pg.2)
+
+```js
+class Dictionary {
+  constructor() {
+    this.entries = {}; // Using an object to store key-value pairs
+  }
+
+  add(key, value) {
+    this.entries[key] = value; // Add or update the key-value pair
+  }
+
+  get(key) {
+    return this.entries[key]; // Retrieve the value for the given key
+  }
+
+  remove(key) {
+    delete this.entries[key]; // Remove the key-value pair
+  }
+}
+```
+
+---
+transition: slide-left
+---
+
+# Hash Table / Dictionaries in JS (pg.3)
+
+```js
+class HashTable {
+  constructor(size = 10) {
+    this.buckets = new Array(size).fill(null).map(() => []);
+    this.size = size;
+  }
+
+  // Simple hash function
+  hash(key) {
+    let hash = 0;
+    for (let char of key) {
+      hash += char.charCodeAt(0);
+    }
+    return hash % this.size;
+  }
+```
+
+---
+transition: slide-left
+---
+
+# Hash Table / Dictionaries in JS (pg.4)
+
+```js
+  // Insert or update
+  set(key, value) {
+    const index = this.hash(key);
+    const bucket = this.buckets[index];
+
+    // Check if key already exists
+    for (let pair of bucket) {
+      if (pair[0] === key) {
+        pair[1] = value; // update value
+        return;
+      }
+    }
+
+    // If key doesn't exist, insert new pair
+    bucket.push([key, value]);
+  }
+```
+
+---
+transition: slide-left
+---
+
+# Hash Table / Dictionaries in JS (pg.5)
+
+```js
+  // Retrieve
+  get(key) {
+    const index = this.hash(key);
+    const bucket = this.buckets[index];
+
+    for (let pair of bucket) {
+      if (pair[0] === key) {
+        return pair[1];
+      }
+    }
+    return undefined; // not found
+  }
+```
+
+---
+transition: slide-left
+---
+
+# Hash Table / Dictionaries in JS (pg.6)
+
+```js
+  // Remove
+  remove(key) {
+    const index = this.hash(key);
+    const bucket = this.buckets[index];
+
+    for (let i = 0; i < bucket.length; i++) {
+      if (bucket[i][0] === key) {
+        bucket.splice(i, 1);
+        return true;
+      }
+    }
+    return false;
+  }
+
+  // Print table (for testing)
+  print() {
+    this.buckets.forEach((bucket, i) => {
+      if (bucket.length > 0) {
+        console.log(`Bucket ${i}:`, bucket);
+      }
+    });
+  }
+}
+```
+
+---
 layout: image-right
 transition: slide-left
 image: /assets/addy.png
