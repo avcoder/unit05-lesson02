@@ -38,13 +38,18 @@ transition: slide-left
 
 # Recap
 
+- Q: What is Big O notation?
 - Q: How is an array arranged in memory?
 - Q: How might regular characters (ex: "hello") be arranged in memory?
-- Q: What's the Big O notation for inserting a new element?
 - Q: What's the Big O notation for accessing an element in the array?
+- Q: What's the Big O notation for inserting a new element?
+- Q: What's the Big O notation for deleting a new element?
+- Q: Are arrays growable?
 - Q: In C, what are the 2 possible values we can output for any variable in memory?
+   - in JS, how can we access the value of a variable?
+   - in JS, how can we access the address of a variable?
 - Q: What was the catch in C when declaring an array?
-- Potential issue: What if we wanted to insert an element in the array?
+   - Potential issue: What if we wanted to insert an element in the array?
    - Q: List alternative solutions to this issue?
 
 
@@ -53,6 +58,7 @@ transition: slide-left
 - char str[] = { 'H', 'e', 'l', 'l', 'o', '\0' };
 - Big O = if space not available O(n)
 - 2 possible values = address of memory cell, value written in memory cell
+- in JS you cannot access the memory address of a variable directly.
 - catch = size must be known at compile time.  Can't resize. 
 - issue = takes time array to bigger array; can't accidentally overwrite 'h' for 'hello'
 -->
@@ -63,20 +69,31 @@ transition: slide-left
 
 # Dynamically Allocating Memory in C
 
+
+
 ---
 transition: slide-left
 ---
 
-# Linked Lists
+# Data Structure: Linked Lists
 
 - We'd like a way to have an array-like structure, but without the downsides of contiguous memory when inserting a new element
 <img src="/assets/llist.png">
 - Each node contains: 
-   - a value (data)
-   - a reference (pointer) to the next node
+   - a value (data, whose value can be anything. ex: int)
+   - a reference (pointer) to the next node (whose value is the address of the next node in memory)
 - Q: Does inserting a new element in our list solve the problem we originally had with contiguous memory
-- Q: Which is faster: inserting at the beginning of a linked list or an array?
-- Q: How might you delete, traverse (loop through and print nodes), or search now?
+- Q: What is the Big O notation for inserting a new element at the beginning of a linked list?
+- Q: What is the Big O notation for inserting a new element at the end of a linked list?
+   - How might we do better for inserting at end?
+- Q: What is the Big O notation for accessing an element in a linked list?
+
+<!--
+- O(1) for inserting a new element at beginning of a linked list
+- O(n) for inserting a new element at end of a linked list
+- Unless you have tail node then it's O(1) for inserting at end
+- O(n) for accessing an element in a linked list since you must traverse
+-->
 
 ---
 transition: slide-left
