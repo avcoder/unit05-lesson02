@@ -88,21 +88,16 @@ transition: slide-left
 ---
 layout: image-right
 transition: slide-left
-image: /assets/danny.png
-backgroundSize: 400px 120px
+image: /assets/addy.png
+backgroundSize: 400px 300px
 class: text-left
 ---
 
 # 10 minute break
 
 🍦 Cool Tips, Trends and Resources:
-- 💻 [leetcode](https://leetcode.com/)
-- 🕵️ [hackerrank](https://www.hackerrank.com/)
-- 🚦[codeSignal](https://codesignal.com/)
-- 📡 [interviewBit](https://codesignal.com/)
-- 🏫 [Harvard Algorithms Lecture](https://www.youtube.com/watch?v=iCx3zwK8Ms8)
-- 🏫 [Harvard Data Structures Lecture](https://www.youtube.com/watch?v=0euvEdPwQnQ&list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4&index=6)
-- 🧮 [THE classic CS Textbook](https://edutechlearners.com/download/Introduction_to_algorithms-3rd%20Edition.pdf)
+- 🖇️ [Linked Lists](https://www.geeksforgeeks.org/linked-list-data-structure/)
+- 👩‍💻 [NeetCode](https://www.freecodecamp.org/news/prepare-for-technical-interviews-using-neetcode-150)
 
 <br>
 <hr>
