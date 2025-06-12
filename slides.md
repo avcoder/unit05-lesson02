@@ -769,8 +769,8 @@ transition: slide-left
 
 # Exercises: Recursion
 
-1.  Write a function that computes: `power(n, x) → n^x`
-   - ex: `power(2, 3) // should output 8`
+1. Write a function that computes: n to the exponent x
+   - ex: `power(2, 3)` // should output 8
 2. Calculate the sum of natural number up to n
    - ex: `sum(5) // should output 15`
 3. Write a function that computes the nth Fibonacci number (1, 1, 2, 3, 5, 8, ...)
