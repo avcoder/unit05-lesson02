@@ -140,17 +140,22 @@ Can we solve the problem of copying an entire array to a new location in memory 
 transition: slide-left
 ---
 
-# Arrays vs Linked Lists
+# Exercise: Arrays vs Linked Lists
 
 | Feature                       | **Array**                                         | **Linked List**                                   |
 | ----------------------------- | ------------------------------------------------- | ------------------------------------------------- |
 | **Memory Layout**             | Contiguous memory                                 | Non-contiguous memory                             |
-| **Access Time**               | Fast, `O(1)` random access via index              | Slow, `O(n)` traversal needed                     |
-| **Insertion/Deletion (middle)**        | Slow, `O(n)` (elements need shifting)             | Fast, `O(1)` if node is known                     |
-| **Memory Overhead**           | Low (just data)                                   | High (extra pointer per node)                     |
+| **Access Time**               | `O(?)` random access via index              | `O(?)` traversal needed                     |
+| **Insertion/Deletion (middle)**        | `O(?)` elements need shifting             | `O(?)`                    |
+| **Memory Per element Overhead**           | Low (just data)                                   | High (extra pointer per node)                     |
 | **Implementation Simplicity** | Simpler                                           | More complex (especially for doubly linked lists) |
 | **Use Case Suitability**      | Best for random access and known-size collections | Best for frequent insertions/deletions            |
 
+<!-- 
+- Access Time: O(1) vs O(n)
+- Insertion/Deletion (middle): O(n) vs O(1)
+
+-->
 
 ---
 transition: slide-left
