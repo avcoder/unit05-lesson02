@@ -770,6 +770,7 @@ transition: slide-left
 ---
 
 # Exercises: Recursion
+Write recursive functions for the following problems.  Try not to use ChatGPT or Google to find the answers.  Use your own brain and logic to solve these problems.
 
 1. Write a function that computes: n to the exponent x
    - ex: `power(2, 3)` // should output 8
