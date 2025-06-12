@@ -742,6 +742,17 @@ transition: slide-left
 
 # Why Recursion?
 
+- Reduces complex problems into simpler ones
+- Helps solve naturally recursive problems (like tree traversal, backtracking, divide-and-conquer)
+- Often cleaner and more elegant than loops
+- Every recursive function must have:
+
+| Part           | Purpose                             |
+| -------------- | ----------------------------------- |
+| Base case(s)      | Stops the recursion                 |
+| Recursive case | Continues breaking down the problem |
+
+
 ---
 transition: slide-left
 ---
