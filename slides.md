@@ -752,6 +752,15 @@ transition: slide-left
 | Base case(s)      | Stops the recursion                 |
 | Recursive case | Continues breaking down the problem |
 
+Q: How is recursion different from iteration/loops?
+
+---
+transition: slide-left
+---
+
+# Iterative vs Recursive
+
+<img src="/assets/recursion.png" width="700"/>
 
 ---
 transition: slide-left
