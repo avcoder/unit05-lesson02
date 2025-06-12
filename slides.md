@@ -484,7 +484,7 @@ The hash codes are used purely for efficient lookup behind the scenes.
 transition: slide-left
 ---
 
-# Hashing in Dictionaries
+# Hashing Tables
 
 - If I threw a deck of cards on the floor and asked you to pick to sort all 52 cards, how would you do it?
   - ex: put all spades in one bucket, all hearts in another etc.
