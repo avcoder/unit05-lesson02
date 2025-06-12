@@ -769,6 +769,17 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Tips to Think About When Writing Recursive Functions
+
+- Use a base case to stop recursion
+- Think about how to break down the problem into smaller subproblems
+- Just before you recurse, perhaps do-some-operation in addition to the result of the recursive call.  Example, note the `n *` portion of  `return n * factorial(n - 1)`
+
+
+---
+transition: slide-left
+---
+
 # Exercises: Recursion
 Write recursive functions for the following problems.  Try not to use ChatGPT or Google to find the answers.
 
@@ -780,12 +791,10 @@ Write recursive functions for the following problems.  Try not to use ChatGPT or
    - ex: `fibonacci(5) // should output 5`
 4. Write a function that reverses a string
    - ex: `reverse("hello") // should output "olleh"`
-- Tips: 
-   - Use a base case to stop recursion
-   - Think about how to break down the problem into smaller subproblems
-   - Just before you recurse, perhaps do-some-operation in addition to the result of the recursive call.  Example, note the `n *` portion of  `return n * factorial(n - 1)`
+5. Write a function that checks if a string is a palindrome (reads the same forwards and backwards)
+   - ex: `isPalindrome("racecar") // should output true`
 
-
+Writing Recursive functions can be challenging, so take your time and think through the problem.
 
 
 
