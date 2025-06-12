@@ -38,18 +38,30 @@ transition: slide-left
 
 # Recap
 
-- Q: How might regular variables (ex: "hello") be arranged in memory?
+- Q: How is an array arranged in memory?
+- Q: How might regular characters (ex: "hello") be arranged in memory?
+- Q: What's the Big O notation for inserting a new element?
+- Q: What's the Big O notation for accessing an element in the array?
 - Q: In C, what are the 2 possible values we can output for any variable in memory?
-- Q: How are arrays arranged in memory?
 - Q: What was the catch in C when declaring an array?
 - Potential issue: What if we wanted to insert an element in the array?
    - Q: List alternative solutions to this issue?
 
 
 <!--
+- char str[] = "Hello";
+- char str[] = { 'H', 'e', 'l', 'l', 'o', '\0' };
+- Big O = if space not available O(n)
 - 2 possible values = address of memory cell, value written in memory cell
-- trade off = takes more time when copying original array into bigger array
+- catch = size must be known at compile time.  Can't resize. 
+- issue = takes time array to bigger array; can't accidentally overwrite 'h' for 'hello'
 -->
+
+---
+transition: slide-left
+---
+
+# Dynamically Allocating Memory in C
 
 ---
 transition: slide-left
@@ -63,9 +75,14 @@ transition: slide-left
    - a value (data)
    - a reference (pointer) to the next node
 - Q: Does inserting a new element in our list solve the problem we originally had with contiguous memory
+- Q: Which is faster: inserting at the beginning of a linked list or an array?
 - Q: How might you delete, traverse (loop through and print nodes), or search now?
 
+---
+transition: slide-left
+---
 
+# Dictionaries
 
 
 ---
@@ -93,6 +110,12 @@ class: text-left
 
 - 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
 - ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
+
+---
+transition: slide-left
+---
+
+# Recursion
 
 ---
 transition: slide-left
