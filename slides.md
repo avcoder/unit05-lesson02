@@ -34,9 +34,41 @@ Algorithms and Structural Foundations - part 2/8
 
 ---
 transition: slide-left
+layout: center
+class: text-center
 ---
 
-# Recap
+# In ASCII, the capital `A` has value 65.  Yet in C, I can set an int variable to 65
+How does the computer know how to interpret `01000001`?
+
+---
+transition: slide-left
+---
+
+# Recap (pg.1)
+
+```c
+char ch = 65;     // or 'A'
+int num = 65;
+```
+
+- At the binary level, both ch and num may store the same value (01000001), but:
+   - char ch is interpreted as a character → 'A'
+   - int num is interpreted as a number → 65
+- They're both just bytes in memory. The difference lies in how the C compiler and standard library interpret or print them.
+
+| Declared As | Meaning         | Output with `printf`      |
+| ----------- | --------------- | ------------------------- |
+| `char ch`   | ASCII character | `printf("%c", ch);` → A   |
+| `int num`   | Integer value   | `printf("%d", num);` → 65 |
+| `char ch`   | Integer value   | `printf("%d", ch);` → 65  |
+
+
+---
+transition: slide-left
+---
+
+# Recap (pg.2)
 
 - Q: What is Big O notation?
 - Q: How is an array arranged in memory?
