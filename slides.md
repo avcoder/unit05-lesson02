@@ -433,6 +433,8 @@ console.log(dictionary.banana); // Output: A long yellow fruit
 ```
 
 - Operations on Dictionaries include: Insert, Search, Delete, Update
+- Average O(1) for insert, search, and delete operations
+- Worst-case O(n) if many collisions occur (e.g., all keys hash to the same index)
 
 ---
 transition: slide-left  
@@ -440,13 +442,65 @@ transition: slide-left
 
 # How is a Dictionary Formed in Memory?
 
-- Internally uses hash tables or arrays 
+- Internally uses hash tables or arrays (think hashing function like `bcrypt` from cybersecurity class)
 - Keys are converted to hash codes (unique numerical representations OR index)
 - Values are stored at the index corresponding to the hash code
 - Handles collisions (when two keys hash to the same index) using techniques like chaining or open addressing
 
 <img src="/assets/dict.png" width="300px" style="background-color: #fff; display: block; margin: 0 auto">
 
+---
+transition: slide-left
+layout: center
+class: text-center
+---
+
+# Does that mean each JS object's key is actually hashed into some alphanumeric code?
+Yes
+
+---
+transition: slide-left
+---
+
+# JS objects are hashed
+
+- When you declare an object like:
+```js
+const obj = {
+  name: "Alice",
+  age: 25,
+};
+```
+
+- Internally: ✅ Yes, string keys are hashed into numeric values (not visible to you).
+- Externally: ❌ You still see your keys as-is, e.g., "name" or "age" — not the hash codes.
+- Maps those hashes to memory locations (or internal table buckets)
+- Stores the associated values (like "Alice", 25, etc.) at hash-computed locations
+
+
+The hash codes are used purely for efficient lookup behind the scenes.
+
+
+
+---
+transition: slide-left  
+---
+
+# Pseudo-code for a Dictionary
+
+```
+class DictionaryEntry {
+    key
+    value
+}
+
+class Dictionary {
+    entries = array of DictionaryEntry
+    add(key, value)
+    get(key)
+    remove(key)
+}
+```
 
 ---
 layout: image-right
