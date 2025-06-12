@@ -103,6 +103,15 @@ transition: slide-left
 -->
 
 ---
+transition: slide-left 
+layout: center
+class: text-center
+---
+
+# What if we could structure our data, such that we can connect random allocated memory blocks  instead of contiguous memory blocks?
+Like: connect-the-dots
+
+---
 transition: slide-left
 ---
 
