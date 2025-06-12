@@ -770,7 +770,7 @@ transition: slide-left
 ---
 
 # Exercises: Recursion
-Write recursive functions for the following problems.  Try not to use ChatGPT or Google to find the answers.  Use your own brain and logic to solve these problems.
+Write recursive functions for the following problems.  Try not to use ChatGPT or Google to find the answers.
 
 1. Write a function that computes: n to the exponent x
    - ex: `power(2, 3)` // should output 8
@@ -780,6 +780,9 @@ Write recursive functions for the following problems.  Try not to use ChatGPT or
    - ex: `fibonacci(5) // should output 5`
 4. Write a function that reverses a string
    - ex: `reverse("hello") // should output "olleh"`
+- Tips: Use a base case to stop recursion
+   - Think about how to break down the problem into smaller subproblems
+   - Just before you recurse, perhaps do-some-operation in addition to the result of the recursive call.  Example, note the `n *` portion of  `return n * factorial(n - 1)`
 
 
 
