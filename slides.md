@@ -67,18 +67,11 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Dynamically Allocating Memory in C
-
-
-
----
-transition: slide-left
----
-
 # Data Structure: Linked Lists
 
-- We'd like a way to have an array-like structure, but without the downsides of contiguous memory when inserting a new element
+
 <img src="/assets/llist.png">
+
 - Each node contains: 
    - a value (data, whose value can be anything. ex: int)
    - a reference (pointer) to the next node (whose value is the address of the next node in memory)
@@ -94,6 +87,13 @@ transition: slide-left
 - Unless you have tail node then it's O(1) for inserting at end
 - O(n) for accessing an element in a linked list since you must traverse
 -->
+
+---
+transition: slide-left
+---
+
+# Dynamically Allocating Memory in C
+
 
 ---
 transition: slide-left
