@@ -710,6 +710,9 @@ class: text-left
 - 🖇️ [Linked Lists](https://www.geeksforgeeks.org/linked-list-data-structure/)
 - 👩‍💻 [NeetCode](https://www.freecodecamp.org/news/prepare-for-technical-interviews-using-neetcode-150)
 - ➿ [Recursion](https://dev.to/codeguppy/recursion-in-javascript-practical-exercises-41hg)
+- [Visual Go](https://visualgo.net/en)
+- [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+- [napkin ai](https://www.napkin.ai/)
 
 <br>
 <hr>
