@@ -67,8 +67,8 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Data Structure: Linked Lists
-
+# Data Structure: Linked Lists 
+Can we solve the problem of copying an entire array to a new location in memory when inserting?
 
 <img src="/assets/llist.png">
 
@@ -76,9 +76,9 @@ transition: slide-left
    - a value (data, whose value can be anything. ex: int)
    - a reference (pointer) to the next node (whose value is the address of the next node in memory)
 - Q: Does inserting a new element in our list solve the problem we originally had with contiguous memory
-- Q: What is the Big O notation for inserting a new element at the beginning of a linked list?
-- Q: What is the Big O notation for inserting a new element at the end of a linked list?
-   - How might we do better for inserting at end?
+- Q: What is the Big O notation for inserting/deleting a new element at the beginning of a linked list?
+- Q: What is the Big O notation for inserting/deleting a new element at the end of a linked list?
+   - How might we do better for inserting/deleting at end?
 - Q: What is the Big O notation for accessing an element in a linked list?
 
 <!--
@@ -94,6 +94,11 @@ transition: slide-left
 
 # Dynamically Allocating Memory in C
 
+---
+transition: slide-left
+---
+
+# Dynamically Allocating Memory in JS
 
 ---
 transition: slide-left
