@@ -780,7 +780,8 @@ Write recursive functions for the following problems.  Try not to use ChatGPT or
    - ex: `fibonacci(5) // should output 5`
 4. Write a function that reverses a string
    - ex: `reverse("hello") // should output "olleh"`
-- Tips: Use a base case to stop recursion
+- Tips: 
+   - Use a base case to stop recursion
    - Think about how to break down the problem into smaller subproblems
    - Just before you recurse, perhaps do-some-operation in addition to the result of the recursive call.  Example, note the `n *` portion of  `return n * factorial(n - 1)`
 
