@@ -490,7 +490,9 @@ transition: slide-left
   - ex: put all spades in one bucket, all hearts in another etc.
   - Buckets: 
      - put an input into a location, makes problem smaller and easier to solve.  
-     - takes a very large domain and maps it to a smaller range of values
+     - takes a very large domain of inputs and maps it to a smaller range of values
+
+<img src="/assets/hash.png" style="display: block; margin: 0 auto" />
 
 ---
 transition: slide-left  
