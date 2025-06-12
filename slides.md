@@ -158,10 +158,67 @@ transition: slide-left
 -->
 
 ---
+class: text-center
+layout: center
 transition: slide-left
 ---
 
-# Dynamically Allocating Memory in C
+# Which Data Structures could be implemented using Linked Lists?  (ex: nodes that point to another node)
+
+<img src="/assets/ds1.gif" width="300px" style="display: inline-block">
+
+---
+transition: slide-left
+---
+
+# Static Memory Allocation in C - Arrays
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int list[3];
+
+    list[0] = 1;
+    list[1] = 2;
+    list[2] = 3;
+
+    for (int i = 0; i < 3; i++) {
+        printf("%d at %p\n", list[i], (void*)&list[i]);
+    }
+}
+```
+
+---
+transition: slide-left
+---
+
+# Dynamic Memory Allocation in C - Arrays
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int list[3] = {1, 2, 3}; // static memory allocation
+    int *list2 = malloc(4 * sizeof(int)); // allocate memory for 4 integers
+
+    if (list2 == NULL) { 
+      return 1; // Memory allocation failed
+    } 
+
+    for (int i = 0; i < 3; i++) {
+      list2[i] = list[i]; // copy values from static array to dynamic array
+    }
+    list2[3] = 4; // add a new element
+
+    for (int i = 0; i < 4; i++) {
+        printf("%d at %p\n", list2[i], (void*)&list2[i]);
+    }
+
+    free(list2); // free the dynamically allocated memory
+}
+```
 
 ---
 transition: slide-left
