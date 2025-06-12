@@ -506,6 +506,24 @@ A combination of an array and a linked list
 - Potential issue = Collisions: when two keys hash to the same index
 
 ---
+transition: slide-left
+---
+
+# Hash Table / Dictionaries - Big O
+Technically a dictionary has worst case of O(n), but in practice, it is often O(1) due to good hash functions and collision resolution strategies.
+
+| Operation  | Average Case | Worst Case |
+| ---------- | ------------ | ---------- |
+| **Insert** | O(1)         | O(n)       |
+| **Search** | O(1)         | O(n)       |
+| **Delete** | O(1)         | O(n)       |
+
+- What causes the worst case?
+   - Poor hash function leading to many collisions
+   - All keys hashing to the same index
+   - Inefficient collision resolution strategy
+
+---
 transition: slide-left  
 ---
 
